@@ -15,7 +15,7 @@ const ListItems = ({ items }: PropsTypes) => {
   return (
     <div className={Styles.listItemContainer}>
       {
-        items?.map((item, index) => <div className={Styles.beerCard} key={item.id}
+        items?.map(item => <div className={Styles.beerCard} key={item.id}
           >
           <div onClick={() => showModal(item)}>
             <img src={item.image_url} alt="beer" />

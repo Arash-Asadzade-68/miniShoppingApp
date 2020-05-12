@@ -1,15 +1,13 @@
 import express from "express";
 import next from "next";
 import bodyParser from "body-parser";
-// import csrf from "csurf";
 import helmet from "helmet";
-// import compression from "compression";
 import getConfig from "next/config";
 import cookieParser from "cookie-parser";
 import apiRoutes from "./routes/api";
 
-const __ENVIRONMENT__ = false; // production mode
-// const __ENVIRONMENT__ = process.env.NODE_ENV !== "production";
+// const __ENVIRONMENT__ = false; // production mode
+const __ENVIRONMENT__ = process.env.NODE_ENV !== "production";
 
 // dir: for defining root nextjs pages folder
 const app = next({ dev: __ENVIRONMENT__});
@@ -31,7 +29,7 @@ app.prepare().then(() => {
   server.use( bodyParser.urlencoded({ extended: false }));
   server.use( cookieParser(COOKIE_SECRET));
   server.use( helmet());
-  // server.use( compression());
+
 
   server.use(apiRoutes);
 

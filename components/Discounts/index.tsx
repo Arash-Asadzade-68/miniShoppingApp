@@ -1,10 +1,10 @@
 import Styles from './styles.scss'
-const Header = () =>{
+const Discounts = () =>{
   return(
     <div className={Styles.headerContainer}>
-        <h2>Demo App</h2>
+        <h2>Discounts</h2>
     </div>
   )
 }
 
-export default Header;
+export default Discounts;
