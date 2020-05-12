@@ -6,8 +6,12 @@ import getConfig from "next/config";
 import cookieParser from "cookie-parser";
 import apiRoutes from "./routes/api";
 
-// const __ENVIRONMENT__ = false; // production mode
-const __ENVIRONMENT__ = process.env.NODE_ENV !== "production";
+
+// if you want run project in production 
+const __ENVIRONMENT__ = false; // production mode
+
+// if you want run project in development mode uncomment below and comment up line 
+// const __ENVIRONMENT__ = process.env.NODE_ENV !== "production";
 
 // dir: for defining root nextjs pages folder
 const app = next({ dev: __ENVIRONMENT__});
