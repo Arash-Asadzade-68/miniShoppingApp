@@ -1,0 +1,14 @@
+
+.container {
+    width: 425px;
+    overflow: hidden;
+    > div:first-child{
+      background-color: #e30d07;
+      height:80px;
+    }
+    color: #FFF;
+    background-color: #262222;
+    margin: auto;
+    height: 100%;
+}
+

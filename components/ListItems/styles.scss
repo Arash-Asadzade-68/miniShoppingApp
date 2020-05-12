@@ -1,0 +1,45 @@
+.listItemContainer{
+    background-color: #FFF;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    overflow-y: auto;
+    
+   
+  .beerCard{
+    padding: 5px;
+    color: #000;
+    width: 100%;
+    height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > div {
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #aaa;
+      border-radius: 10px;
+      cursor: pointer;
+     > img{
+        width: 25%;
+        height: 80%;
+        margin-top: 10px;
+      }
+    } 
+    > span{
+      display: block;
+      white-space: nowrap; 
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      text-align: center;
+      font-size: 12px;
+    }
+
+  }
+}

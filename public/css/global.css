@@ -1,0 +1,24 @@
+body{
+  background-color:rgb(235, 235, 238)!important;
+  font-family: "roboto";
+  
+}
+
+*:focus {
+  outline: -webkit-focus-ring-color unset!important;
+}
+*:active {
+  outline: -webkit-focus-ring-color unset!important;
+}
+
+/* /* @font-face {
+  font-family: "OpenSance";
+  src: url(../fonts/OpenSans/OpenSans-Regular.629a55a7.ttf);
+  font-weight: 700
+} */
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+} 
+

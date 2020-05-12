@@ -1,0 +1,22 @@
+.steakContainer {
+  :global(.ant-select-selection-search-input){
+    display: none!important;
+  }
+
+  .selectBox {
+    width: 100%;
+    position: static;
+    display: flex;
+    :global(.ant-select-arrow)::before {
+      content: unset;
+    }
+    :global(.ant-select-selection-item) {
+      padding: 0 10px;
+    }
+    :global(.ant-select-dropdown) {
+      background-color: #26222222;
+      color: #ffffff;
+      padding: 0 12px;
+    }
+  }
+}
