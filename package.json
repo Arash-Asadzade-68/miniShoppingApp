@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development && babel-node -- server/server.js",
-    "build": "set NODE_ENV=production  && next build  && babel -d build/startup/ ./server",
-    "heroku-postbuild": "npm run build",
-    "start": "set NODE_ENV=production && babel-node server/server.js"
-
+    "dev": "babel-node server/server.js",
+    "build": "next build",
+    "start": "SET  NODE_ENV=production && babel-node  server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +23,7 @@
     "axios": "^0.19.1",
     "babel-plugin-inline-dotenv": "^1.5.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-preset-node6": "^11.0.0",
     "classnames": "^2.2.6",
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
