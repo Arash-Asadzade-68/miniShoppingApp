@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/babel-node server/server.js",
-    "build": "next build",
-    "start": "./node_modules/.bin/babel-node  server/server.js",
+    "dev": "babel-node server/server.js",
+    "build": "set NODE_ENV=production  && next build  && babel -d build/startup/ ./server",
+    "start": "babel-node  ./build/startup/server.js",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
