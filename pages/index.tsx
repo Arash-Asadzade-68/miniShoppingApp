@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const Index = () => {
     return (<Layout>
-        <Meta pageTitle="Multi Input" />
+        <Meta pageTitle="Beers Shop" />
             <Beer />
     </Layout>)
 }
