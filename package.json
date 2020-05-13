@@ -7,7 +7,8 @@
     "dev": "set NODE_ENV=development && babel-node -- server/server.js",
     "build": "set NODE_ENV=production  && next build  && babel -d build/startup/ ./server",
     "heroku-postbuild": "npm run build",
-    "start": "pm2 start  ./build/startup/server.js --name cvBuilder --env production"
+    "start": "set NODE_ENV=production && babel-node server/server.js"
+
   },
   "keywords": [],
   "author": "",

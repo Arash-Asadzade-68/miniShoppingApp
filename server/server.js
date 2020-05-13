@@ -40,11 +40,11 @@ app.prepare().then(() => {
   //Handling client side routes comes from NextJS
   server.get("*", (req, res) => handle(req, res));
 
-  // server.listen(parseInt(PORT, 10) || 3000, err => {
-  //   if (err) throw err;
-  //   console.log(`> Ready on http://localhost:${parseInt(PORT, 10) || 3000}`);
-  // });
-  app.listen(process.env.PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  server.listen(parseInt(PORT, 10) || 3000, err => {
+    if (err) throw err;
+    console.log(`> Ready on http://localhost:${parseInt(PORT, 10) || 3000}`);
   });
+  // server.listen(process.env.PORT || 3000, function(){
+  //   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  // });
 });
