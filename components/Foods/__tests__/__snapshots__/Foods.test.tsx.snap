@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foods renders foods component 1`] = `
+<div
+  className="headerContainer"
+>
+  <h2>
+    Foods
+  </h2>
+</div>
+`;
