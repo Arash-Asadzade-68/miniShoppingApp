@@ -35,7 +35,6 @@ const PizzaBeers = ({pizza}:PropsTypes) => {
       dispatch(getPizzaBeersAction({ page, per_page, food: 'pizza' }))
       return page
     })
-
   }
 
   const sortByValue = (items , value) => {
@@ -50,7 +49,6 @@ const PizzaBeers = ({pizza}:PropsTypes) => {
   }
 
   return (
-
     <div className={Styles.pizzaContainer}>
        <div className={Styles.selectBox}>
         <Select defaultValue="sort by" style={{
@@ -79,9 +77,6 @@ const PizzaBeers = ({pizza}:PropsTypes) => {
         <ListItems items={pizzaItems} />
       </InfiniteScroll>}
     </div>
-
-
-
   );
 }
 export default React.memo(PizzaBeers);

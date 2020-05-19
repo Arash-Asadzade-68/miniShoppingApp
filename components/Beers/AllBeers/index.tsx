@@ -21,8 +21,6 @@ const AllBeers = ({ beers }: PropsTypes) => {
   const { Option } = Select;
 
   useEffect(() => {
-
-
     if (page === 1) setBeersItems(beers)
     else if (beers) setTimeout(() => { setBeersItems(prevState => {
       if(sortVal.length> 0) {
