@@ -35,7 +35,7 @@
     "fetch-retry": "^2.2.3",
     "gh-pages": "^2.2.0",
     "helmet": "^3.21.0",
-    "immer": "^4.0.0",
+    "immer": "^9.0.6",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.15",
     "next": "^9.0.2",
